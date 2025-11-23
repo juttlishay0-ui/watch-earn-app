@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch & Earn</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+            text-align: center;
+        }
+
+        .box {
+            margin-top: 150px;
+        }
+
+        button {
+            background: purple;
+            padding: 12px 25px;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+
+        #pkgSection {
+            margin-top: 50px;
+            display: none;
+        }
+
+        .pkg {
+            background: #222;
+            padding: 15px;
+            margin: 10px auto;
+            width: 80%;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h1>Watch & Earn System</h1>
+        <p>Please login to continue</p>
+        <button onclick="login()">Login / Signup</button>
+    </div>
+
+    <div id="pkgSection">
+        <h2>Select Your Package</h2>
+
+        <div class="pkg">PKG 1 — Rs 3000 | Daily 1200 | 12 Days</div>
+        <div class="pkg">PKG 2 — Rs 6000 | Daily 2400 | 12 Days</div>
+        <div class="pkg">PKG 3 — Rs 9000 | Daily 3600 | 12 Days</div>
+        <div class="pkg">PKG 4 — Rs 12000 | Daily 4800 | 12 Days</div>
+
+        <p style="margin-top:20px;color:#aaa;">You will only see approved package after selecting</p>
+    </div>
+
+    <script>
+        function login() {
+            document.querySelector('.box').style.display = 'none';
+            document.querySelector('#pkgSection').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
